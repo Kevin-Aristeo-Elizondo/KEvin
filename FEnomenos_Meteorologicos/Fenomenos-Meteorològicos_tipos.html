@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> El Vigilante 3.0 </title>
+    <link rel="stylesheet" href="CSS-1/style-6.3.2.css">
+    <link rel="icon" href="../FISICA/logo1.png"/>
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body onload="cargarModo();">
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bx-menu'></i>
+      <span class="logo_name">CodingLab</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="../../IN-DEX.html">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Inicio</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="../../IN-DEX.html">Inicio</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Materias</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materias</a></li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="../ECO-LIGIA.html">Ecologia</a></li>
+          <li><a href="../Fisica.html">Fisica</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Inf.</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Informacion</a></li>
+          <li><a href="../../FQA/inf.html">Contacto</a></li>
+          <li><a href="../../FQA/IN-DEX.html">FAQ</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Analytics</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Analytics</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Chart</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chart</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a>
+            <i class='bx bx-plug' ></i>
+            <span class="link_name">Plugins</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Plugins</a></li>
+          <li><a onclick="cambiarModo();">Claro / Oscuro</a></li>
+           <li><a onclick="resetear();">Resetear</a></li>
+          <li><a href="#">Box Icons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="http://youtube.com/watch?v=Y76Pjyxzid0">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="http://youtube.com/watch?v=Y76Pjyxzid0">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content"> <a href="http://www.cecytejalisco.edu.mx/"><img src="../image/profile.png" alt="profileImg"></a>
+      </div>
+      <a>
+        <span class="link_name"><div class="name-job">
+        <div class="profile_name">Proyecto Web</div>
+        <div class="job">v3.0.1</div>
+      </div></span>
+          </a>
+      
+      <i class='' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class=""></i>
+            <span class="text"><center>
+        <h1>Fenomenos Meteorològicos</h1>
+        <center><h4><table border="1" align="center" bordercolor="green" cellspacing="0">
+
+          <tbody><tr valign="bottom" align="center">
+              <td width="124" height=150" valign="middle" bgcolor=""><strong>Tipos de Fenomenos Meteorològicos</strong></td>
+              <th width="874" valign="middle" bgcolor="">Descripción
+       </th>
+              <th width="350" valign="middle" bgcolor=""> Ejemplo </th>
+           </tr>
+           <tr>
+              <th height="75" valign="middle" bgcolor="">Hidrometeoros</th>
+              <td align="center" bgcolor="">Los hidrometeoros están compuestos de partículas de agua líquida o sólida que pueden estar suspendidas en la atmósfera, precipitar a través de ella, ser arrastradas por el viento desde la superficie de la Tierra o estar depositadas sobre otros objetos.</td>
+              <td align="left" bgcolor=""><li>partículas en suspensión;</li>
+       <li>partículas que precipitan (precipitación)</li>
+       <li>partículas levantadas de la superficie de la Tierra por el vient</li>
+       
+       
+       
+       </td>
+           </tr>
+           <tr>
+              <th height="75" valign="middle" bgcolor="">Litometeoros</th><td align="center" bgcolor="" valign="middle">Un litometeoro está formado por un conjunto de partículas, la mayoría de las cuales son sólidas y no acuosas. Las partículas están suspendidas en el aire o son levantadas del suelo por el viento.
+
+</td>
+              <td align="left" valign="top" bgcolor=""><li>ventisca baja y alta de polvo o arena, </li>
+       <li>tempestad de polvo o tempestad de arena</li>
+       <li> remolino de polvo o remolino de arena</li>
+       </td>
+           </tr>
+               <tr>
+              <th height="75" valign="middle" bgcolor="">Fotometeoros</th>
+              <td align="center" bgcolor="">Formada por individuos originados por reproducción asexual a partir de un progenitor común. Los individuos que las integran están unidos físicamente. Pueden ser todos iguales o presentar diferencias morfológicas y fisiológicas. El ejemplo sería el coral de los océanos. Hay dos tipos</td>
+              <td bgcolor="" align="left"><li> fenómenos de halo</li>
+       <li>irisaciones </li>
+       <li>gloria</li>
+       
+       </td>
+           </tr>
+                   <tr>
+              <th height="75" valign="middle" bgcolor="">Eolometeoros</th>
+              <td align="center" bgcolor="">Fenómeno que consiste en un torbellino de viento, a menudo intenso, cuya presencia se manifiesta por una columna nubosa o por un cono nuboso invertido en forma de embudo. Chubasco de viento. El aspecto del cielo es generalmente aborrascado, pero no se descubren nubes sombrías.
+
+</td>
+              <td align="left" bgcolor=""><li>Ciclones</li>
+       <li>Tornados</li>
+       <li>Vientos</li>
+       </td>
+           </tr>
+       </tbody></table>
+       
+       </h4></center>
+       
+
+    <head>
+<style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+
+.container__card{
+    max-width: -600px;/*posicion de dos*/
+    margin: auto;
+    margin-top: 0;
+    perspective: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__father{
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.card{
+    width: 380px;
+    height: 380px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card__front,
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: white;
+}
+
+.body__card_front{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+}
+
+.body__card_back{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.body__card_back p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.body__card_back input{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+}
+
+.body__card_back input:hover{
+    box-shadow: 1px 1px 30px 0px #449de6;
+} </style>
+</head>
+<body>
+  <br><audio src="VIdeos/title.mp3" controls></audio>
+    <main>
+
+      <div class="card__father">
+        <div class="card">
+            <div class="card__front" style="background-image: url(dard/102632_thunder-highway.gif);">
+                <div class="bg"></div>
+                <div class="body__card_front">
+                    <h3>Informacion anterios</h3>
+                </div>
+            </div>
+            <div class="card__back">
+                <div class="body__card_back">
+                  <font color="black"><h4>Fenomenos Meteorològicos</h4></font>
+                    <p><h8><font color="black">Nubosidad, viento, nieve, tormentas, olas de calor... son fenómenos meteorológicos que, en un momento determinado, pueden desarrollarse en cualquier lugar del planeta. Algunos, como la lluvia
+                     </font></p>
+                    <form>
+                        <a href="Fenomenos-Meteorològicos.html">
+                            <input type="button" value="Leer Más">
+                        </a>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="card__father">
+          <div class="card">
+              <div class="card__front" style="background-image: url(dard/a.gif )";>
+                  <div class="bg"></div>
+                  <div class="body__card_front">
+                      <h3> Siguiente Informacion</h3>
+                  </div>
+              </div>
+              <div class="card__back">
+                  <div class="body__card_back">
+                      <h4><font color="black">Las Fenomenos Meteorològicos</h1>
+                    <p><h8>Nubosidad, viento, nieve, tormentas, olas de calor... son fenómenos meteorológicos </p>
+                                 <form>
+                          <a href="climas.html">
+                              <input type="button" value="Leer Más">
+                          </a>
+                          </form>
+                          <br><audio src="VIdeos/title.mp3"  controls></audio>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+       </div>
+          </span>
+    </div>
+   </section>
+
+
+  <script src="JS/script.js"></script>
+    <script src="JS/script.js-1"></script>
+    <script type="text/javascript" src="JS/app.js"></script>
+   
+</body>
+</html>
