@@ -1,2 +1,0 @@
-# KEvin
-Proyecto transverasl
