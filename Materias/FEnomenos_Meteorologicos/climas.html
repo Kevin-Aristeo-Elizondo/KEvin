@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> El Vigilante 3.0 </title>
+    <link rel="stylesheet" href="CSS-1/style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+      * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .grid-item {
+  
+    align-items: center;
+    justify-content: center;
+  
+    background: url(VIdeos/completo.jpg);
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+  
+  }
+  
+  .grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  
+  @media (min-width: 600px) {
+    .wide {
+      grid-column: span 2;
+    }
+  
+    .tall {
+      grid-row: span 2;
+    }
+  }</style>
+    </head>
+<body onload="cargarModo();">
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bx-menu'></i>
+      <span class="logo_name">CodingLab</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="IN-DEX.html">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Inicio</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Materias</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Materias</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Materias</a></li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="Materias/ECO-LIGIA.html">Ecologia</a></li>
+          <li><a href="Materias/Fisica.html">Fisica</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Inf.</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Informacion</a></li>
+          <li><a href="../../FQA/inf.html">Contacto</a></li>
+          <li><a href="../../FQA/IN-DEX.html">FAQ</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Analytics</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Analytics</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Chart</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chart</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a>
+            <i class='bx bx-plug' ></i>
+            <span class="link_name">Plugins</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Plugins</a></li>
+          <li><a onclick="cambiarModo();">Claro / Oscuro</a></li>
+           <li><a onclick="resetear();">Resetear</a></li>
+          <li><a href="#">Box Icons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="http://youtube.com/watch?v=Y76Pjyxzid0">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="http://youtube.com/watch?v=Y76Pjyxzid0">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content"> <a href="http://www.cecytejalisco.edu.mx/"><img src="../image/profile.png" alt="profileImg"></a>
+      </div>
+      <a>
+        <span class="link_name"><div class="name-job">
+        <div class="profile_name">Proyecto Web</div>
+        <div class="job">v3.0.1</div>
+      </div></span>
+          </a>
+      
+      <i class='' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='' ></i>
+            <span class="text">
+  </div>
+<background
+    <div class="grid-container">
+      
+      <div
+        class="grid-item wide"
+        style="
+          background-image: url('VIdeos/b2u2oa001p10e09.jpg');"
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url('VIdeos/b2u2oa001p10e20.jpg');
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url('VIdeos/b2u2oa001p10e25.jpg');
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url('VIdeos/b2u2oa001p10e27.jpg');
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url('VIdeos/b2u2oa001p10e32.jpg');
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="background-image: url('VIdeos/competencia_interespecifica_que_es_caracteristicas_y_ejemplos_3168_orig.jpg')"
+      ></div>
+      <div
+        class="grid-item tall wide"
+        style="
+          background-image: url('VIdeos/image5b635e6968c31.jpg');
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url('VIdeos/descarga.jpg');
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url('VIdeos/lion-4366887_640.jpg');
+        "
+      ></div>
+
+      <div
+        class="grid-item"
+        style="
+          background-image: url('VIdeos/descarga0.jpg');
+        "
+      ></div>
+ 
+
+      <div
+        class="grid-item"
+        style="
+          background-image: url('VIdeos/584-900x900.jpg');
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url('VIdeos/Animals-Wolves-Carnivores-Predator-Nature-3512705.jpg');
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url('VIdeos/Relaciones-ecológicas-intraespecíficas.jpg.jpg');
+        "
+      ></div>
+      <div
+      class="grid-item"
+      style="
+        background-image: url('VIdeos/images.jpg');
+      "
+    ></div>
+    <div
+    class="grid-item"
+    style="
+      background-image: url('VIdeos/000742550.jpg');
+    "
+  ></div>
+  <div
+  class="grid-item"
+  style="
+    background-image: url('VIdeos/1367345493_630443_1367410391_sumario_grande.jpg');
+  "
+></div>
+<div
+class="grid-item"
+style="
+  background-image: url('VIdeos/El-Sumario-Estudio-alerta-que-cambio-climatico-agudiza-fenomenos-meteorologicos-1.jpg');
+"
+></div>
+  </span>
+    </div>
+   </section>
+
+  <script src="JS/script.js"></script>
+    <script src="JS/script.js-1"></script>
+    <script type="text/javascript" src="JS/app.js"></script>
+   
+</body>
+</html>
